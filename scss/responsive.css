@@ -1,0 +1,119 @@
+@media screen and (max-width: 959px) {
+  .swiper-container {
+    margin-top: -24px;
+  }
+  #pc-header ul {
+    justify-content: center;
+  }
+  .skills .skills-flex .skill {
+    width: 30%;
+  }
+  .modal-flex .modal-o-c-wrap {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .anchor {
+    display: block;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  .swiper-slide img {
+    height: 300px;
+  }
+  #pc-header {
+    display: none;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .title {
+    background-color: #007C92;
+    text-align: center;
+    padding: 25px 0;
+  }
+  .title h1 {
+    color: #fff;
+  }
+  .about {
+    background-color: #007C92;
+    text-align: center;
+    padding: 25px 0;
+  }
+  .about h1 {
+    color: #fff;
+  }
+  .profile1, .profile2 {
+    width: 95%;
+    padding: 10px;
+  }
+  .profile1 p, .profile2 p {
+    font-size: 14px;
+  }
+  .profile2 {
+    margin-top: 0px;
+    padding-top: 0;
+  }
+  .skills .skills-flex {
+    padding: 0;
+  }
+  .skills .skills-flex .skill {
+    width: 45%;
+    margin: 0;
+  }
+  .skills .skills-flex .skill p {
+    font-size: 14px;
+  }
+  .skills .skills-flex .html_logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .skills .skills-flex .html_logo p {
+    margin: 0;
+  }
+  .skills .skills-flex .css_logo img {
+    width: 120px;
+    height: 120px;
+    transform: translateY(-4px);
+  }
+  .skills .skills-flex .css_logo p {
+    margin-top: -13px;
+  }
+  .skills .skills-flex .sass_logo {
+    margin-top: 34px;
+    transform: translateY(-7px);
+  }
+  .skills .skills-flex .sass_logo i {
+    font-size: 70px;
+  }
+  .skills .skills-flex .js_logo {
+    transform: translateY(14px);
+  }
+  .skills .skills-flex .js_logo img {
+    width: 85px;
+    height: 85px;
+  }
+  .skills .skills-flex .jquery_logo img {
+    width: 110px;
+    height: 110px;
+  }
+  .skills .skills-flex .php_logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .skills .skills-flex .php_logo p {
+    margin-top: -40px;
+  }
+  .modal-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-flex .modal-o-c-wrap {
+    width: 100%;
+    margin-top: 35px;
+  }
+  .modal-flex .modal-o-c-wrap p {
+    font-size: 14px;
+  }
+}
