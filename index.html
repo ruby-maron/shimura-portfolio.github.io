@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- マウスストーカー用css -->
+    <link rel="stylesheet" href="../scss/mouse.css">
+    <!-- fontawesome用 -->
+    <script src="https://kit.fontawesome.com/c5608607a7.js"></script>
+    <!-- drawerのCDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
+    <!-- jquery & iScroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+    <!-- スライドショーswiperのCDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <!-- 通常のcss -->
+    <link rel="stylesheet" href="../scss/portfolio.css">
+    <!-- レスポンシブ用css -->
+    <link rel="stylesheet" href="../scss/responsive.css">
+    <!-- ファビコン -->
+    <link rel="icon" href="../img/favicon.ico">
+    <title>SHIMURA'portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body class="drawer drawer--right">
+
+    <!-- ======マウスストーカー========= -->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- ======スクロール途中でTOPへ戻るボタン用======= -->
+    <div class="floating">
+        <div class="jump-icon">
+            <i class="fas fa-angle-double-up"></i>
+        </div>
+    </div>
+
+    <!-- ============HEADER========================= -->
+    <!-- ===PC用 header===-->
+    <header id="pc-header">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>      
+        </ul>
+    </header>
+    <!-- ===スマホ用 header=== -->
+    <header role="banner">  
+        <!-- ハンバーガーボタン -->
+            <button type="button" class="drawer-toggle drawer-hamburger">
+                  <span class="sr-only">toggle navigation</span>
+                  <span class="drawer-hamburger-icon"></span>
+                </button>    
+        <!-- ナビゲーションの中身 -->
+            <nav class="drawer-nav" role="navigation">
+              <ul class="drawer-menu">
+                <li><a class="drawer-menu-item" href="#about">About</a></li>
+                <li><a class="drawer-menu-item" href="#skills">Skills</a></li>
+                <li><a class="drawer-menu-item" href="#works">Works</a></li>
+                <li><a class="drawer-menu-item" href="#contact">Contact</a></li>      
+            </ul>
+        </nav>
+    </header>
+    <!-- =======トップ背景 swiper=================== -->
+    <!-- ※backgroundではなくswiperプラグインだから、子要素にheader入れない -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-zoom-container"><img src="../img/maldives.jpg" alt="モルディヴ"></div>
+            <div class="swiper-slide swiper-zoom-container"><img src="../img/maldives-2.jpg" alt="モルディヴ"></div>
+            <div class="swiper-slide swiper-zoom-container"><img src="../img/turtle.jpg" alt="ウミガメ"></div>
+            <div class="swiper-slide swiper-zoom-container"><img src="../img/tahiti.jpg" alt=""></div>
+            <div class="swiper-slide swiper-zoom-container"><img src="../img/kerama.jpg" alt=""></div>
+            <div class="swiper-slide swiper-zoom-container"><img src="../img/back1.jpg" alt=""></div>
+            <div class="swiper-slide swiper-zoom-container"><img src="../img/inoshishi.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <!-- トップのロゴ -->
+        <div class="top-message">
+            <img src="../img/Yuki.Shimura-Design-logo.png" alt="ロゴ">
+        </div>
+    </div>
+
+
+    <!-- ======メイン======== -->
+    <main>
+        <!-- =====About===== -->
+        <div class="anchor" id="about"></div>
+        <div class="title">
+            <h1>About</h1>
+        </div>
+        
+        <div class="profile1">
+            <p>都内にてフリーランスでWeb制作やその他ビジネスをしております。</p>
+            <p>2014年 個人事業主として開業。2年半の間、回線の営業を業務委託として請け負う。主にBtoC</p>
+            <p>2016年 外国人人材紹介のエージェントを業務委託として請け負う。BtoB（継続中）</p>
+            <p>2018年 IT系法人営業を業務委託として請け負う。（継続中）</p>
+            <p>2019年 IT系法人営業をしながら、web系に興味を持ち完全独学で仕事に。</p>
+        </div>
+
+        <div class="profile2">
+            <p>氏名：志村 祐樹 Shimura Yuki</p>
+            <p>所在地：東京都</p>
+            <!-- <p>お問い合わせ：</p> -->
+        </div>
+        <!-- =====Skills===== -->
+        <div class="anchor" id="skills"></div>
+        <div class="skills">
+            <div class="title">
+                <h1>Skills</h1>
+            </div>
+            <div class="skills-flex">
+                <div class="skill html_logo">
+                    <img src="../img/html5_logo.svg" alt="HTMLのロゴ">
+                    <p>HTML5</p>
+                </div>
+                <div class="skill css_logo">
+                    <img src="../img/css3_logo.svg" alt="cssのロゴ">
+                    <p>CSS3</p>
+                </div>
+                <div class="skill sass_logo">
+                    <i class="fab fa-sass sass"></i>
+                    <p>Sass/Scss</p>
+                </div>
+                <div class="skill js_logo">
+                    <img src="../img/javascript_logo.svg" alt="cssのロゴ">
+                    <p>Javascript</p>
+                </div>
+                <div class="skill jquery_logo">
+                    <img src="../img/jquery_logo.svg" alt="cssのロゴ">
+
+                </div>
+                <div class="skill php_logo">
+                    <img src="../img/php_logo.svg" alt="cssのロゴ">
+
+                </div>
+            </div>
+        </div>
+
+        <!--=========Works=============  -->
+        <div class="anchor" id="works"></div>
+        <div class="works">
+            <div class="title">
+                <h1>Works</h1>
+            </div>
+
+            <!-- モーダルウィンドウ ↓↓↓中身ここから。-->
+            <!-- オーバーレイ -->
+            <div id="modal-overlay"></div>
+
+            <div class="modal-content">
+                <img src="../img/mosya_isara_pc.png" alt="LP模写PCサイズ">
+                <i class="fas fa-window-close modal-close"></i>
+            </div>
+
+            <div class="modal-content sp-size">
+                <img src="../img/mosya_isara_sp.png" alt="LP模写スマホサイズ">
+                <i class="fas fa-window-close modal-close"></i>
+            </div>
+
+            <div class="modal-content">
+                <img src="../img/shochu_lp.png" alt="LP模写">
+                <p><a class="modal-close">閉じる</a></p>
+            </div>
+
+            <div class="modal-content">
+                <img src="../img/shochu_lp.png" alt="LP模写">
+                <p><a class="modal-close">閉じる</a></p>
+            </div>
+
+            <!-- ↑↑↑モーダル中身ここまで -->
+
+
+            <!-- モーダルのサムネ ↓↓↓ここから。モーダルの中身との連携はjQueryにてindex番号で判別。-->
+            <div id="modal-open" class="modal-flex">
+                <!-- リンク飛ばさないaタグには tabindex="-1" を付与。（マウスストーカーhoverエフェクト用にaタグで囲んでいるだけ）-->
+                <div class="modal-o-c-wrap">
+                    <a tabindex="-1"><img class="modal-o-c" src="../img/isara_thumbnail.png" alt="isara模写のサムネ"></a>
+                    <p>isara.life模写制作LP（PCサイズ）</p>
+                    <p>モデルとしたサイト：<a href="https://isara.life" class="isara-url" target="blank">isara.life</a></p>
+                </div>
+
+                <div class="modal-o-c-wrap">
+                    <a tabindex="-1"><img class="modal-o-c isara-sp" src="../img/isara_sp_thumbnail.png"
+                            alt="スマホサイズのisara模写のサムネ"></a>
+                    <p>isara.life模写制作LP（スマホサイズ）</p>
+                </div>
+
+                <div class="modal-o-c-wrap">
+                    <a href="https://www.taracohouse.com/karuto/" target="blank"><img src="../img/shimura_portfolio.png"
+                            alt="私のサイト"></a>
+                    <p>今見ているコチラのサイト</p>
+                </div>
+
+                <div class="modal-o-c-wrap">
+                    <a abindex="-1"><img class="modal-o-c" src="../img/shochu_thumbnail.png" alt="焼酎LPのサムネ"></a>
+                </div>
+
+                <div class="modal-o-c-wrap">
+                    <a abindex="-1"><img class="modal-o-c" src="../img/shochu_thumbnail.png" alt="焼酎LPのサムネ"></a>
+                </div>
+
+            </div>
+            <!-- モーダルのサムネ ↑↑↑ここまで-->
+
+
+
+
+
+
+        </div>
+
+        <!-- <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br> -->
+
+
+        <!-- =====coryr===== -->
+        <div class="copyr">
+            <small><span style="font-family:'Times New Roman', 'Times';">&copy;</span> 2019 Yuki Shimura</small>
+        </div>
+
+    </main>
+    <!-- fontawesome用 -->
+    <script src="https://kit.fontawesome.com/c5608607a7.js"></script>
+    <!-- マウスストーカー用js -->
+    <script src="../js/mouse.js"></script>
+    <!-- drawerのCDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
+    <!-- swiperのCDN -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script> -->
+    <!-- swiperのjsファイル -->
+    <script src="../js/swiper.js"></script>
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+</body>
+
+</html>
